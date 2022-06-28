@@ -17,6 +17,8 @@ Role Variables
 Example Playbook
 ----------------
 
+```
 - hosts: servers
   roles:
     - vector-role
+```
