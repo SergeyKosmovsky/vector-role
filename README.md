@@ -1,7 +1,7 @@
-Role Name
+Role vector
 =========
 
-A brief description of the role goes here.
+Репа для установки программы Vector на Centos8.
 
 Requirements
 ------------
