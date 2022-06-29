@@ -8,7 +8,7 @@
   with_items: "{{ vector_version }}"
 
 - name: Create folder config vector
-  file:
+  ansible.builtin.file:
     path: /usr/conf
     state: directory
 
