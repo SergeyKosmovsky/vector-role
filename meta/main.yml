@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: vector-role
+  role_name: vector_role
   namespace: SergeyKosmovsky
   author: Sergey
   description: homework for netology
@@ -11,7 +11,7 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-      - 8
+        - all
 
   galaxy_tags:
     - vector
