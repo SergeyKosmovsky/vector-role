@@ -7,13 +7,11 @@
     disable_gpg_check: true
   with_items: "{{ vector_version }}"
 
-
 - name: Create folder config vector
-  become: true
-  ansible.builtin.command: "mkdir /usr/conf"
-  register: folder
-  failed_when: folder.rc !=1 and folder.rc !=0
-  changed_when: folder.rc ==0
+  file:
+    path: /usr/conf
+    state: directory
+
 - name: Copy vector config
   become: true
   ansible.builtin.template:
