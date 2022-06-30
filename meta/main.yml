@@ -1,12 +1,12 @@
 galaxy_info:
   role_name: vector_role
-  namespace: SergeyKosmovsky
+  namespace: sergeykosmovsky
   author: Sergey
   description: homework for netology
 
   license: MIT
 
-  min_ansible_version: 2.10
+  min_ansible_version: "2.10"
 
   platforms:
     - name: EL
