@@ -2,7 +2,7 @@
 # tasks file for vector-role
 - name: Install RPMs from Vector site
   ansible.builtin.dnf:
-    name: "https://packages.timber.io/vector/latest/{{ vector_version }}.x86_64.rpm"
+    name: "https://packages.timber.io/vector/latest/vector-{{ vector_version }}.x86_64.rpm"
     state: present
     disable_gpg_check: true
   with_items: "{{ vector_version }}"
