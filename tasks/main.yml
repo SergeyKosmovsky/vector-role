@@ -13,12 +13,10 @@
     state: directory
 
 - name: Copy vector config
-  become: true
   ansible.builtin.template:
     src: "templates/vector.toml"
     dest: "/usr/conf/vector.toml"
 - name: Change file permissions vector.toml
-  become: true
   ansible.builtin.file:
     path: "/usr/conf/vector.toml"
     state: file
